@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ubicacion_MetalGYM.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <!--referecniar el estilo js-->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/> 
+      <!--referenciar el estilo del mini map-->
+      <link rel="stylesheet" href="Control.MiniMap.css">
+       <!--referenciar el estilo del legend-->
+      <link rel="stylesheet" href="leaflet.legend.css">
+      <link rel="stylesheet" href="leaflet-panel-layers.css">
+      <link rel="stylesheet" href="leaflet.legend.css">
+     
+    <title>Metal GYM</title>
+</head>
+<body>
+    <video src="/Gym - 20422.mp4" autoplay loop muted></video>
+    <header class="header-gym">
+        <div class="menu-btn">
+            <i class='bx bx-menu'></i>
+        </div> 
+        <nav class="navbar-gym">
+            <div class="header-image">
+            <img src="Header.PNG" alt="LOGO1">
+            </div>
+            <div class="header-menu">
+                <a href="index.html">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Entrenadores</a>
+                <a href="#">Metal Gym 1.</a>
+                <a href="#">Metal Gym 2.</a>
+                <a href="#">Ubicacion</a>
+                <a href="#">pagos</a>
+            </div>
+        </nav>
+    </header>
+    <div class="encabezado">
+        <h1 class="encabeado-title"> 
+            Bienvenido al Metal Gym.
+        </h1>
+        <a href="#">Contactanos.</a>
+        <div class="redes1">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-youtube'></i>
+            <i class='bx bxl-whatsapp'></i>
+        </div>
+    </div>
+    <div class="ubicacion">
+        <h1>Mapa de ubicacion Metal Gym #1 y #2</h1>
+        <h2>Cual Metal gym deseas saber su ubicacion?</h2>
+        <div class="formBlock">
+            <form id="form">
+                <input type="text" name="start" class="input" id="Metal1" placeholder="Metal Gym #1" />
+                <input type="text" name="end" class="input" id="Metal2" placeholder="Metal Gym #2" />
+                <button type="submit">Mira el Mapa.</button>
+            </form>
+            </div> 
+        <div class="map" id="map"></div>     
+    </div>
+    <footer>
+        <h1>Metal Gym.</h1>
+        <div class="footer_container">
+            <ul>
+                <li><i class='bx bxs-location-plus'></i></li>
+                <li>Colonia Kennedy.</li>
+            </ul>
+            <ul>
+                <li><i class='bx bx-phone-call'></i></li>
+                <li>Contactanos.</li>
+            </ul>
+        </div>
+        <div class="data1">
+            <a href="https://www.facebook.com/metalgymhonduras"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/metalgymhonduras/?hl=es-la"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a> <br>
+        </div>
+        <h2>Hecho por Carlos Archaga Analista SIG.</h2>
+        <p>Derechos reservador Metal GYM.</p>
+    </footer>
+  
+
+
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <script src="Control.MiniMap.js"></script>
+    <script src="leaflet-panel-layers.js"></script>
+    <script src="leaflet-providers.js"></script>
+    <script src="leaflet.legend.js"></script>
+    <script src="Metalgym1.js"></script>
+    <script src="Metalgym2.js"></script> 
+    <script src="Ubicacion_MetalGYM.js"></script>
+</body>
+</html>

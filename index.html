@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--Link a boostrap-->
+    <!--<link rel="stylesheet" href="/css/boostrap.css"> -->
+    <!--carga de estilos personalizados-->
+    <link rel="stylesheet" href="estilos2.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/> 
+      <!--referenciar el estilo del mini map--> 
+      <link rel="stylesheet" href="Control.MiniMap.css">
+       <!--referenciar el estilo del legend-->
+      <link rel="stylesheet" href="leaflet.legend.css">
+      <link rel="stylesheet" href="leaflet-panel-layers.css">
+      <link rel="stylesheet" href="leaflet.legend.css">
+    <title>Metal Gym</title>
+</head>
+<body>
+    <video src="/Gym - 20422.mp4" autoplay loop muted></video>
+    <div class="menu-btn">
+        <i class='bx bx-menu'></i>
+    </div> 
+    <header class="header-gym show-on-scroll">
+        <nav class="navbar-gym">
+            <div class="header-image">
+            <img src="Header.PNG" alt="LOGO1">
+            </div>
+            <div class="header-menu">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Entrenadores</a>
+                <a href="#">Metal Gym 1.</a>
+                <a href="#">Metal Gym 2.</a>
+                <a href="Ubicacion_MetalGYM.html">Ubicacion</a>
+                <a href="#">pagos</a>
+            </div>
+        </nav>
+    </header>
+    <div class="encabezado">
+        <h1 class="encabeado-title"> 
+            Bienvenido al Metal Gym.
+        </h1>
+        <a href="#">Contactanos.</a>
+        <div class="redes1">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-youtube'></i>
+        <i class='bx bxl-whatsapp'></i>
+        </div>
+    </div>
+    <div class="servcicios">
+        <div class="title-services">
+            <h2>Nuestro servicios</h2>
+        </div>
+        <div class="contenedor">
+            <div class="row-contenedor">
+             <h2>Pesas.</h2>
+             <a href="#">Mira aqui.</a>
+            </div>
+            <div class="row-contenedor">
+            <h2>Baile.</h2>
+            <a href="#">Mira aqui.</a>   
+            </div>
+            <div class="row-contenedor">
+            <h2>Kickboxing.</h2>
+            <a href="#">Mira aqui.</a>   
+            </div>
+        </div>
+    </div>
+    <h2>Nuetros clientes.</h2>
+    <div class="galeria">
+        <a href="#image1"><img src="Foto1.jpg" alt="1" class="img1"></a>
+        <a href="#image2"><img src="Abogada.webp" alt="2" class="img1"></a>
+        <a href="#image3"><img src="Cliente2.jpg" alt="3" class="img1"></a>
+        <a href="#image4"><img src="Cliente3.webp" alt="4" class="img1"></a>
+        <a href="#image5"><img src="Clientes4.webp" alt="5" class="img1"></a>
+        <a href="#image6"><img src="clientes5.webp" alt="6" class="img1"></a>
+    </div>
+    <article class="ligth-box" id="image1">
+        <a href="#image6" class="next"><i class='bx bx-left-arrow'></i></a>
+        <img src="Foto1.jpg" alt="">
+        <a href="#image2" class="next"><i class='bx bx-right-arrow'></i></a>
+        <a href="#" class="close">X</a>
+    </article> 
+
+    <article class="ligth-box" id="image2">
+        <a href="#image1" class="next"><i class='bx bx-left-arrow'></i></a>
+        <img src="Abogada.webp" alt="">
+        <a href="#image3" class="next"><i class='bx bx-right-arrow'></i></a>
+        <a href="#" class="close">X</a>
+    </article> 
+
+    <article class="ligth-box" id="image3">
+        <a href="#image2" class="next"><i class='bx bx-left-arrow'></i></a>
+        <img src="Cliente2.jpg" alt="">
+        <a href="#image4" class="next"><i class='bx bx-right-arrow'></i></a>
+        <a href="#" class="close">X</a>
+    </article> 
+
+    <article class="ligth-box" id="image4">
+        <a href="#image3" class="next"><i class='bx bx-left-arrow'></i></a>
+        <img src="Cliente3.webp" alt="">
+        <a href="#image5" class="next"><i class='bx bx-right-arrow'></i></a>
+        <a href="#" class="close">X</a>
+    </article> 
+
+    <article class="ligth-box" id="image5">
+        <a href="#image4" class="next"><i class='bx bx-left-arrow'></i></a>
+        <img src="Clientes4.webp" alt="">
+        <a href="#image6" class="next"><i class='bx bx-right-arrow'></i></a>
+        <a href="#" class="close">X</a>
+    </article> 
+
+    <article class="ligth-box" id="image6">
+        <a href="#image5" class="next"><i class='bx bx-left-arrow'></i></a>
+        <img src="clientes5.webp" alt="">
+        <a href="#image1" class="next"><i class='bx bx-right-arrow'></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <div class="publicidad">
+        <div class="imagen">
+            <img src="Publicidad.PNG" alt="Publicidad">
+        </div>
+        <div class="precios">
+            <h1>Entrena con los mejores.</h1>
+            <h2>Team Metal</h2>
+            <h3>Entradores certificados.</h3>
+           <a href="#">Mira nuestros entrenadores.</a>
+        </div>
+    </div>
+    <h2>Ubicacion Metal Gym 1 y 2.</h2>
+    <div class="mapas">
+        <div class="mapa1" id="mapa1"></div>
+        <div class="mapa2" id="mapa2"></div> 
+    </div> 
+    <footer>
+        <h1>Metal Gym.</h1>
+        <div class="footer_container">
+            <ul>
+                <li><i class='bx bxs-location-plus'></i></li>
+                <li>Colonia Kennedy.</li>
+            </ul>
+            <ul>
+                <li><i class='bx bx-phone-call'></i></li>
+                <li>Contactanos.</li>
+            </ul>
+        </div>
+        <div class="data1">
+            <a href="https://www.facebook.com/metalgymhonduras"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/metalgymhonduras/?hl=es-la">
+            <i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a> <br>
+        </div>
+        <h2>Hecho por Carlos Archaga Analista SIG.</h2>
+        <p>Derechos reservador Metal GYM.</p>
+    </footer>
+
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <script src="Control.MiniMap.js"></script>
+    <script src="leaflet-panel-layers.js"></script>
+    <script src="leaflet-providers.js"></script>
+    <script src="Inicio.js"></script> 
+    <script src="Mapa1.js"></script>
+    <script src="Mapa2.js"></script> 
+</body>
+</html>
